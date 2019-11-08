@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/fonts/iconfont.css">
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../styles/goods.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/search.css" />
+    <script src="../scripts/lib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <div class="top">
+        <div id="btn-wrap">
+            <a href="register.html">注册</a>
+            <a href="login.html">登录</a>
+            <a class="iconfont icongouwuche" style="font-size: 14px;padding-left:14px " href="car.html"></a>
+        </div>
+
+        <div id="home"><a href="" id="login-name"></a><a href="javascript:;" id="outlogin">退出登陆</a> <a class="iconfont icongouwuche" style="font-size: 14px;padding-left:14px "href="car.html"></a></div>
+
+        <img src="http://static.xiu.com/pc/static/images/common/0400082c7d2c4d5dd248369a2.png" class="logo">
+        <div class="search-wrap">
+            <input type="text" placeholder="搜索商品" style="outline:none;"><a href="search.html"><i class="iconfont iconsousuo"></i></a>
+        </div>
+    </div>
+
+    <!-- 返回顶部 -->
+    <div id="dingbu"><i class="iconfont icon-dingbu"></i></div>
+
+
+    <!--  导航   -->
+    <div class="tab-wrap">
+        <div class="tab-bar">
+            <ul class="tab-list">
+                <li class="tab"><a href="index.html">首页</a></li>
+                <li class="tab"><a href="">新品</a></li>
+                <li class="tab"> <a href="">女士</a> </li>
+                <li class="tab"> <a href="">男士</a> </li>
+                <li class="tab"><a href="">品牌</a> </li>
+                <li class="tab"><a href="">走秀移动版</a> </li>
+            </ul>
+        </div>
+        <div class="category-wrap">
+            <ul class="category-list">
+                <li class="category"><a href="">女装</a>
+                    <ul class="sub-list">
+                        <li class="sub">
+                            <h4>上装</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <h4>下装</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <h4>半身裙</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <h4>连衣裙</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category">男装
+                    <ul class="sub-list">
+                        <li class="sub">
+                            <h4>上装</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <h4>下装</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category">女包
+                    <ul class="sub-list">
+                        <li class="sub">
+                            <h4>上装</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <h4>下装</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <h4>半身裙</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category">男包
+                    <ul class="sub-list">
+                        <li class="sub">
+                            <h4>上装</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <h4>下装</h4>
+                            <ul class="third-list">
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                                <li class="third"><a href="">T恤</a></li>
+                                <li class="third"><a href="">吊带</a></li>
+                                <li class="third"><a href="">卫衣</a></li>
+                                <li class="third"><a href="">棉衣</a></li>
+                                <li class="third"><a href="">大衣</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="category">女鞋</li>
+                <li class="category">男鞋</li>
+                <li class="category">妆品</li>
+                <li class="category">女士配饰</li>
+                <li class="category">男士配饰</li>
+                <li class="category">腕表</li>
+                <li class="category">生活</li>
+                <li class="category">婴童</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 商品详情 -->
+    <div class="product-wrap">
+        <div class="nav-wrap">
+            <span>走秀首页</span><i>&gt;</i>
+            <span class="zp"></span><i>&gt;</i>
+            <span class="mm"></span>
+        </div>
+
+        <div class="main-wrap">
+            <div class="left-wrap">
+                <div id="Dimg">
+                    <div id="sbox"></div>
+                </div>
+                <div id="imgBox">
+                </div>
+                <div class="img-wrap">
+                    <button class="lt" style="outline: none;"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3MTk2MDlBODI1NkIxMUU5ODdFOUE1QUU2NjZCN0VDQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3MTk2MDlBOTI1NkIxMUU5ODdFOUE1QUU2NjZCN0VDQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjcxOTYwOUE2MjU2QjExRTk4N0U5QTVBRTY2NkI3RUNDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjcxOTYwOUE3MjU2QjExRTk4N0U5QTVBRTY2NkI3RUNDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+fIX5PAAAAPRJREFUeNqE0k+nAlEYx/HpD9EmLVrffbSOdilitKjV1TLpHaRX0KLoDUSkVbSIRETdu24dtW4d5bpcd5Pp+/DEGHPODB/D8XPmzO85Mdd1nYingm48IlTEGt+2YAEbDDAxBT+wxRxDWQgL5rDHAf33YjCYwQ5ndOCFBdNY4YFPPP07JPWdwEJ3lDr+g+eRYAwz5FHCT9jfSXCMsoZupq78Z/RszUuwJ83jS6sxBmWnNi5acsb2aamihV+tKGU74x+ayGKplTmmyUg1Na1qqtU5pllLRVU1Ck4m+FzhahN3uUFJS3Un1PUWPaJu+BENmdxLgAEAFqArt5DuTF8AAAAASUVORK5CYII="></button>
+                    <button class="rt" style="outline: none;"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAUCAYAAAC07qxWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3MEIxQkU3RDI1NkIxMUU5OEJDQjkwNTRDQTIwOUJBMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3MEIxQkU3RTI1NkIxMUU5OEJDQjkwNTRDQTIwOUJBMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjcwQjFCRTdCMjU2QjExRTk4QkNCOTA1NENBMjA5QkEzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjcwQjFCRTdDMjU2QjExRTk4QkNCOTA1NENBMjA5QkEzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hsngDgAAAPtJREFUeNp80rFKQnEUx/H/VSEIRAzyHeoFQhx0sIY7tYk0tLg4uoT4AA4Ori4iDYHgUEM0FCkENfQC+QJ3u4M0FC1y+x44d7nc8//BZ/tx//97/icIw/DOObfAxnlSwAcecOYrljBDFY9oYmsVJWPU8II6oryj0wzwpnc99hUTXOvRT6hYRckeXfzgHgdWUfKLSxxhhaJVlHzjAqeYIyh5RhejjXdMCs6fxHfHNDKiNV5xYxVlNM/4Qk++nFc81LffoaMjc9mfkVEsUdYf+cu+tSTALU7Q0BG5vOIULV2K2NqeEa50zSJrzfoY4tzaxXSODX3bT9/k/wUYAEj3LEcbY0zWAAAAAElFTkSuQmCC"></button>
+                    <div id="img-list">
+                        <!-- <img src="http://img.cms.xiu.com/1554778503897.jpg?x-image-process=image/resize,w_300/format,webp/interlace,1">
+                            <img src="http://img.cms.xiu.com/1554778503897.jpg?x-image-process=image/resize,w_300/format,webp/interlace,1">
+                            <img src="http://img.cms.xiu.com/1554778503897.jpg?x-image-process=image/resize,w_300/format,webp/interlace,1">
+                            <img src="http://img.cms.xiu.com/1554778503897.jpg?x-image-process=image/resize,w_300/format,webp/interlace,1">
+                            <img src="http://img.cms.xiu.com/1554778503897.jpg?x-image-process=image/resize,w_300/format,webp/interlace,1"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="right-wrap">
+                <div class="product-name"></div>
+                <span class="brand-name"></span><span class="product-no"></span>
+                <p class="price-wrap"><i class="price">¥</i><span class="price-1"></span>&nbsp;&nbsp;<span
+                        class="price-2"></span></p>
+                <div class="regin-name">发货地:
+                    <span class="regin"></span>
+                    <span class="regin-data">预计7-14个工作日送达</span>
+                </div>
+                <div class="regin-name">税&nbsp;&nbsp;费:
+                    <span class="tariff">商家承担</span>
+                </div>
+                <div class="condition-color">
+                    <div class="colorname">颜&nbsp;&nbsp;色: </div>
+                    <ul>
+                        <li class="condition_active">无</li>
+
+                    </ul>
+                </div>
+                <div class="condition-color">
+                    <div class="colorname">尺&nbsp;&nbsp;码: </div>
+                    <ul>
+                        <li class="condition_active">F</li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class="numberadd">
+                    <p class="numbername">数&nbsp;&nbsp;量: </p>
+                    <div class="xiaodi">
+                        <div id="jian"> — </div>
+                        <input type="text" id="shuru" value="1">
+                        <div id="jia">+</div>
+                    </div>
+
+                </div>
+
+                <div class="service"><i class="iconfont icon-dianpu"></i><span>由提供</span><i
+                        class="iconfont icon-lianxiren"></i><span>由走秀网提供售后服务</span></div>
+                <div class="btn">
+                    <button class="btn-1" style="outline: none;">立即购买</button>
+                    <button class="btn-2" style="outline: none;">加入购物车</button>
+                </div>
+                <a href="" class="phone">电话订购: 400-888-4499<span>(9:00~19:00)</span></a>
+                <div class="label-list">
+                    <i class="iconfont icon-zheng"></i><span>正品保障</span>
+                    <i class="iconfont icon-icon-test"></i><span>七天退货</span>
+                    <i class="iconfont icon-jian"></i><span>权威质检</span>
+                    <i class="iconfont iconxin"></i><span>收藏商品</span>
+                    <i class="iconfont iconxin"></i><span>收藏品牌</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="details_top">
+        <ul id="shop-list">
+            <li class="active">商品详情</li>
+            <li>商品评价</li>
+        </ul>
+        <div class="show">
+            <p class="title">
+                消费者购前须知：
+            </p>
+            尊敬的顾客，您在走秀网购买的境外发货商品，等同于您在境外购买，请在购买前仔细阅读全部内容，并对自身风险承担作出客观判断。<br>
+            1.海外商品无中文简体标签，如需了解中文信息，请联系客服。<br>
+            2.海外商品适用的关于品质、安全、健康、卫生、环保、标识等标准与我国大陆相关标准可能有所不同，在使用过程中由此可能产生的危害、损失或其他风险，走秀网不承担责任。<br>
+            3.进口税海关收取，抽税告知：<br>
+            “根据跨境电子商务零售进口税收政策，个人单笔交易限值人民币5000元，个人年度交易限值人民币26000元。在限值以内进口的跨境电子商务零售进口商品，关税税率暂设为0%；进口环节增值税、消费税按法定应纳税额的70%征收。<br>
+            计算规则：税费=购买单价×件数x跨境电商综合税率<br>
+            跨境电商综合税率=（消费税率+增值税率）/（1-消费税率）×70%”<br>
+            4.海外购买商品仅限个人自用，不得再次销售。<br>
+            5.海外商家不定期更换包装，走秀网尽力准确展示商品最新包装，如有不符，以收到实物为主。<br>
+            6.所有的商品图片均为专业摄影师拍摄，经后期修制与色彩调整，尽量与实际商品保持一致，但由于灯光、显示器色彩偏差，个人对颜色理解不同等因素，实物与图片出现一定程度色差实属难免，商品颜色请以实际商品为准，此类问题不属于商品质量问题。<br>
+            7.在您收到货时有任何问题请第一时间联系客服解决，对支持七天无理由退货且未拆封、未使用、不影响二次销售的商品，可享受7天无理由退换货。<br>
+            8.确认收货之日7天（含）内，如有质量问题、实物与图文描述不符或缺发，可申请退货。<br>
+            尊敬的顾客，您在走秀网购买的境外发货商品，等同于您在境外购买，请在购买前仔细阅读全部内容，并对自身风险承担作出客观判断。<br>
+            <div class="details">
+            </div>
+        </div>
+        <div>无</div>
+    </div>
+
+    <iframe name="after" width=100% height=70px marginwidth=0 marginheight=0 frameborder="no" border="0"
+        src="after.html"></iframe>
+    <iframe name="foot" width=100% height=400px marginwidth=0 marginheight=0 frameborder="no" border="0"
+        src="foot.html"></iframe>
+</body>
+<script src="../scripts/cookie.js"></script>
+<script src="../scripts/goods.js"></script>
+</html>

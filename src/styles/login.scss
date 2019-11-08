@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tab-bar {
+    width: 100%;
+    height: 85px;
+    position: relative;
+
+    .tab-list {
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 30px;
+        height: 45px;
+
+        li {
+            font-size: 14px;
+            padding: 0 35px;
+            list-style: none;
+            &:hover {
+                
+                a {
+                    color: #c39a58;
+                    border-bottom: 2px solid #c39a58;
+                }
+            }
+
+            a {
+                line-height: 42px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                color: #fff;
+                border-bottom: 2px solid transparent;
+            }
+        }
+    }
+}
+
+.btn-wrap {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+
+    a {
+        display: block;
+        text-decoration: none;
+        float: right;
+        height: 16px;
+        line-height: 16px;
+        color: #fff;
+        background: transparent;
+        border: none;
+        border-right: 1px solid #bbb;
+        font-size: 16px;
+        cursor: pointer;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    #car {
+        border-right: none;
+    }
+}
+
+.content {
+    margin: 50px auto;
+    width: 350px;
+    height: 50px;
+
+    li {
+        float: left;
+        list-style: none;
+
+        a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: #bbb;
+            padding: 0 26px;
+        }
+
+        #one {
+            color: #000;
+            border-right: 3px solid #bbb;
+        }
+    }
+}
+
+.content_1 {
+    margin: 30px auto;
+    width: 300px;
+    height: 430px;
+    display: block;
+
+    p {
+        color: #bbb;
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        height: 30px;
+        width: 300px;
+        border-bottom: 1px solid#bbb;
+        margin: 30px 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        float: right;
+
+    }
+
+    .note {
+        width: 200px;
+    }
+
+    .send {
+        display: block;
+        height: 30px;
+        width: 100px;
+        text-align: center;
+        line-height: 30px;
+
+        border: none;
+        border-bottom: 1px solid #bbb;
+        background: #fff;
+        margin: 30px 0;
+
+        &:hover {
+            background: #bbb;
+        }
+
+    }
+
+    .reg {
+        font-size: 8px;
+        margin: 20px 0;
+    }
+
+    button {
+        width: 300px;
+        height: 50px;
+        background: rgb(192, 39, 39);
+        border: none;
+        color: #fff;
+        &:hover{
+            background: #bbb;
+            cursor:pointer;
+        }
+    }
+}
+
+.content_2 {
+    margin: 30px auto;
+    width: 300px;
+    height: 430px;
+    display: none;
+
+    p {
+        color: #bbb;
+
+    }
+
+    input {
+        border: none;
+        outline: none;
+        height: 30px;
+        width: 300px;
+        border-bottom: 1px solid#bbb;
+        margin: 30px 0;
+    }
+
+    #login-btn {
+        width: 300px;
+        height: 50px;
+        background: rgb(192, 39, 39);
+        border: none;
+        color: #fff;
+
+        &:hover{
+            background: #bbb;
+            cursor:pointer;
+        }
+    }
+}

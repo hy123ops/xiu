@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    <script src="../scripts/lib/jquery-2.0.3.js"></script>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <div class="tab-bar">
+        <ul class="tab-list">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK0AAAAZCAYAAABD9K4gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0RDVBQTBFQzI1RDQxMUU5OTcxQUExMkI2MTlCRUNENSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0RDVBQTBFRDI1RDQxMUU5OTcxQUExMkI2MTlCRUNENSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjRENUFBMEVBMjVENDExRTk5NzFBQTEyQjYxOUJFQ0Q1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjRENUFBMEVCMjVENDExRTk5NzFBQTEyQjYxOUJFQ0Q1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+D79McgAACQBJREFUeNrsXAmUT2UU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"
+                alt="">
+
+            <li><a href="index.html">首页</a> </li>
+            <li><a href="">新品</a> </li>
+            <li><a href="">女士</a> </li>
+            <li><a href="">男士</a> </li>
+            <li><a href="">品牌</a> </li>
+            <li><a href="">走秀移动版</a> </li>
+        </ul>
+        <div class="btn-wrap">
+            <a id="car" class="iconfont icongouwuche" style="font-size: 14px;padding-left:14px "></a>
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+    <!-- 内容 -->
+    <div class="content">
+        <ul>
+            <li><a id="one" href="##">短信登录</a></li>
+            <li><a id="two" href="##">密码登录</a></li>
+        </ul>
+    </div>
+    <div class="content_1">
+        <input type="text" placeholder="请输入手机号码">
+        <p>请输入图形验证码</p>
+        <input type="text">
+        <input class="note" placeholder="请输入短信验证码"><a class="send" href="">发送验证码</a>
+        <a class="reg" href="">注册账号</a>
+        <button>登录</button>
+    </div>
+
+    <!-- 内容2 -->
+<div class="content_2">
+        <div class="field">
+                <p>手机号</p> 
+                <input type="text" id="login-tel" name="">
+               
+            </div>
+            <div class="field">
+                <p>密码</p> 
+                <input type="password" id="login-key" name="">
+                
+            </div>
+            <div class="field">
+                    <span id="tel-warn"></span><br>
+                    <span id="key-warn"></span>
+                <input type="button" id="login-btn" name="" value="登陆">
+            </div>
+</div>
+    <!-- 页尾 -->
+    <iframe name="after" width=100% height=70px marginwidth=0 marginheight=0 frameborder="no" border="0"
+        src="after.html"></iframe>
+    <iframe name="foot" width=100% height=400px marginwidth=0 marginheight=0 frameborder="no" border="0"
+        src="foot.html"></iframe>
+
+</body>
+
+ <script type="text/javascript" src="../scripts/cookie.js"></script> 
+<script type="text/javascript" src="../scripts/login.js"></script>
+
+</html>

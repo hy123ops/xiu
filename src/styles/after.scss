@@ -1,0 +1,31 @@
+/* .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 40px;
+    color: #c7a264;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.after {
+    margin: 0 auto;
+    width: 1160px;
+    height: 70px;
+    li{
+        list-style: none;
+        float: left;
+        margin: 0 111px;
+        font-size: 40px;
+        color: #c7a264;
+        p{
+            color: #666666;
+            font-size: 15px;
+            margin: -26px 38px;
+        }
+    }
+}

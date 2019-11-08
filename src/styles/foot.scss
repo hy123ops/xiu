@@ -1,0 +1,129 @@
+$fw:1200px;
+$fl:left;
+$br: 1px solid #aaaaaa;
+* {
+    margin: 0;
+    padding: 0;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.foot_box1 {
+    height: 278px;
+    background: #000;
+    border-bottom: 1px solid #aaaaaa;
+    color: #fff;
+    .foot_con1 {
+        width: $fw;
+        height: 278px;
+        margin: 0 auto;
+        .foot_con1_1 {
+            width: 250px;
+            height: 185px;
+            border-right: $br;
+            margin-top: 50px;
+            float: $fl;
+            p {
+                font-size: 30px;
+                font-weight: bolder;
+            }
+            #weixin{
+                img{
+                    float: left;
+                    margin: 59px -160px 0 0;
+                    display: none;
+                }
+                &:hover{
+                    img{
+                        display: block;
+                    }
+                }
+               
+            }
+            span {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .foot_con1_2 {
+            width: 156px;
+            height: 185px;
+            margin-top: 50px;
+            float: $fl;
+            border-right: $br;
+            li {
+                list-style: none;
+                text-align: center;
+            }
+            a {
+                line-height: 35px;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .foot_con1_3 {
+            float: $fl;
+            margin: 50px 0 0 50px;
+            width: 358px;
+            height: 185px;
+            border-right: $br;
+            p {
+                line-height: 40px;
+            }
+            img {
+                width: 79px;
+                height: 79px;
+                margin: 32px 30px 0 0;
+
+            }
+        }
+
+        .foot_con1_4 {
+            float: $fl;
+            margin: 50px 0 0 50px;
+            width: 256px;
+            height: 185px;
+
+            a {
+
+                color: #fff;
+                text-decoration: none;
+                display: block;
+            }
+        }
+
+    }
+}
+
+.foot_box2 {
+    height: 120px;
+    background: #000;
+
+    .foot_con2 {
+        margin: 0 auto;
+        width: $fw;
+        height: 120px;
+
+
+        p {
+            color: #666658;
+            text-align: center;
+            line-height: 70px;
+        }
+
+        .foot_imgs {
+            margin-left: 218px;
+        }
+
+        .foot_img {
+
+            float: left;
+            margin-left: 50px;
+
+        }
+    }
+}
